@@ -63,7 +63,7 @@ const Favorites = () => {
         <div className="page-content">
           <h1>Favorites</h1>
           <main>
-            {favorites ? favorites.map(
+            {favorites !== null ? favorites.map(
               (developer) => (
                 <div className="card" key={developer._source.cust_id}>
                   <img
